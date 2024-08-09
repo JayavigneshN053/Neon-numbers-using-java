@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String []args){
+        Scanner mkc=new Scanner(System.in);
+        int a=mkc.nextInt();
+        int sqr=a*a;
+        int sum=0;
+        int num=0;
+        int temp=sqr;
+        while(sqr>0){
+           sqr=temp%10;
+           num=num+sqr;
+           temp=temp/10;
+        }
+        System.out.println((num==a)?"neon":"not neon");
+    }
+}
